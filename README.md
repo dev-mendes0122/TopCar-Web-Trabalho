@@ -9,5 +9,5 @@ Os integrantes do grupo são:
 Breno Carlini Marcondes   RA: 202502478615
 Daniel Lorenzo Resende Duarte   RA: 202404565271
 Eduardo Henrique Souza Vaz   RA: 202503649472
-Felipe Galvãp de França Mendes   RA:202408525907 
+Felipe Galvão de França Mendes   RA:202408525907 
 
