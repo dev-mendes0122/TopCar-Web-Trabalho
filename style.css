@@ -1,0 +1,54 @@
+body{
+    background-color: lightgray;
+}
+
+.card {
+    background-color: rgb(178, 64, 178);
+}
+
+
+.navbar {
+    background-color: red;
+}
+
+.btn-compre {
+    background-color: red;
+}
+
+img{
+    width: 90vw;
+    height: auto;
+}
+
+@media print{}
+@media only screen and (min-width:480px) {
+    body{
+        background-color: yellow;
+    }
+}
+@media only screen and (min-width:600px) {
+    body{
+        background-color: green;
+    }
+
+}
+@media only screen and (min-width:768px) {
+    body{
+        background-color: grey;
+    }
+}
+@media only screen and (min-width:992px) {
+    body{
+        background-color: red;
+    }
+}
+@media only screen and (min-width:1382px) {
+    body{
+        background-color: white;
+    }
+}
+@media only screen and (min-width:-webkit-min-device-aspect-ratio:1.5) {
+    body{
+        background-color: pink;
+    }
+}
