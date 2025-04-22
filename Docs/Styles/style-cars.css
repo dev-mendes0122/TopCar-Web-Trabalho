@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgb(194, 194, 194) 100%);
+    background-repeat: no-repeat;
+}
+
+.brand-logo {
+    width: 25rem;
+    height: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    align-items: flex-start;
+    justify-content: center;
+}
+
+main {
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main-content {
+    padding-top: 1.875rem;
+    width: 90vw;
+    background-color: white;
+    flex-direction: column;
+}
+
+section {
+    height: 20vh;
+    width: 100%;
+}
+
+.grey {
+    background-color: #EDEDED;
+}
+
+.light-grey {
+    background-color: #F5F5F5;
+}
+
+.article-comps {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    height: 20vh;
+}
+
+.article-comps p {
+    font-size: 1.5rem;
+}
+
+.article-title {
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 1.875rem;
+}
+
+.car-img {
+    align-items: center;
+    justify-content: center;
+    background-color: #535353;
+}
+
+.car-img img {
+    width: 60vw;
+    height: auto;
+}
+
+.car-info {
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 60vh;
+}
+
+th {
+    text-align: initial;
+    width: 15vw;
+    font-size: 1.5rem;
+}
+
+td {
+    text-align: start;
+    width: 15vw;
+    padding-bottom: 1.875rem;
+    font-size: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 2rem 4rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    border: 0.188rem solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+    border-radius: 1.875rem;
+}
+   
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 44, 79);
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+}
+   
+.btn:hover::before {
+    transform: translateX(0);
+}
+
+span {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1.875rem;
+}
+
+.galeria {
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.galeria img {
+    width: 33%;
+    height: auto;
+}
