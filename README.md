@@ -7,7 +7,7 @@ Há no github um documento para o benchmark e outro documento para o design do f
 
 Os integrantes do grupo são:
 Breno Carlini Marcondes   RA: 202502478615
-Daniel Lorenzo Resende Duarte   RA: 202404565271
+Daniel Lorenzo Rezende Duarte   RA: 202404565271
 Eduardo Henrique Souza Vaz   RA: 202503649472
 Felipe Galvão de França Mendes   RA:202408525907 
 
