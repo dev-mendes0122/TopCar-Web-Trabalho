@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Painel Admin</title>
+  <link rel="stylesheet" href="../Styles/admin.css" />
+</head>
+<body>
+
+  <section class="criar">
+      <h1>Painel de Administração</h1>
+    <h2>Criar Usuário</h2>
+    <input type="email" id="novoEmail" placeholder="Email" />
+    <input type="password" id="novaSenha" placeholder="Senha" />
+    <button onclick="criarUsuario()">Criar</button>
+  </section>
+
+  <hr />
+
+  <section class="criar2">
+    <h2>Usuários Cadastrados</h2>
+    <div id="usuarios"></div>
+  </section>
+
+  <script>
+    function listarUsuarios() {
+      fetch("../../Back-end/crud/listar.php")
+        .then(res => res.json())
+        .then(data => {
+          const div = document.getElementById("usuarios");
+          div.innerHTML = "";
+
+          data.forEach(user => {
+            div.innerHTML += `
+              <div>
+                <strong>${user.email}</strong>
+                <button onclick="remover(${user.id})">Remover</button>
+                <button onclick="editar(${user.id}, '${user.email}')">Editar</button>
+              </div>
+            `;
+          });
+        });
+    }
+
+    function criarUsuario() {
+      const email = document.getElementById("novoEmail").value;
+      const senha = document.getElementById("novaSenha").value;
+
+      fetch("../../Back-end/crud/criar.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: `email=${encodeURIComponent(email)}&senha=${encodeURIComponent(senha)}`
+      })
+      .then(res => res.text())
+      .then(alert)
+      .then(listarUsuarios);
+    }
+
+    function remover(id) {
+      if (!confirm("Tem certeza que deseja excluir?")) return;
+      fetch(`../../Back-end/crud/deletar.php?id=${id}`)
+        .then(res => res.text())
+        .then(alert)
+        .then(listarUsuarios);
+    }
+
+    function editar(id, atual) {
+      const novoEmail = prompt("Novo email:", atual);
+      const novaSenha = prompt("Nova senha:");
+
+      if (!novoEmail || !novaSenha) return;
+
+      fetch(`../../Back-end/crud/atualizar.php`, {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: `id=${id}&email=${encodeURIComponent(novoEmail)}&senha=${encodeURIComponent(novaSenha)}`
+      })
+      .then(res => res.text())
+      .then(alert)
+      .then(listarUsuarios);
+    }
+
+    listarUsuarios();
+  </script>
+</body>
+</html>
