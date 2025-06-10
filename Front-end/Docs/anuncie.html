@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncie aqui</title>
+    <link rel="icon" href="assets/site-icon.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles/style-car-pages.css">
+    <link rel="stylesheet" href="Styles/anuncie-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="flex">
+    <nav class="flex nav-links-right">
+      <a href="login.html">
+      <img src="assets/login icon.svg" alt="login.png">
+      </a>
+      <img src="assets/br.png" alt="lang.png">
+      
+  </nav>
+  </header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+              <img src="assets/Logo 1.png" alt="Logo" class="logo">
+            </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="nav_bar collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="main-page.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carrospasseio.html">Carros de Passeio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carrospremium.html">Carros Premium</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="supercarros.html">Super Carros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Anuncie Aqui</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <h1>Cadastro de Anúncio de Veículo</h1>
+    <div class="form-area">
+      <form action="#" method="post">
+          <label for="modelo">Modelo</label>
+          <input type="text" id="modelo" name="modelo" required>
+
+          <label for="descricao">Descrição</label>
+          <textarea id="descricao" name="descricao" rows="4" required></textarea>
+
+          <label for="valor">Valor (R$)</label>
+          <input type="number" id="valor" name="valor" step="0.01" required>
+
+          <label for="ano">Ano</label>
+          <input type="number" id="ano" name="ano" required>
+
+          <label for="cidade">Cidade</label>
+          <input type="text" id="cidade" name="cidade" required>
+
+          <label for="quilometragem">Quilometragem (km)</label>
+          <input type="number" id="quilometragem" name="quilometragem" required>
+
+          <label for="cambio">Câmbio</label>
+          <select id="cambio" name="cambio" required>
+            <option value="">Selecione</option>
+            <option value="manual">Manual</option>
+            <option value="automatico">Automático</option>
+            <option value="automatizado">Automatizado</option>
+            <option value="cvt">CVT</option>
+          </select>
+
+          <label for="carroceria">Carroceria</label>
+          <input type="text" id="carroceria" name="carroceria">
+
+          <label for="blindado">Blindado</label>
+          <select id="blindado" name="blindado" required>
+            <option value="">Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+          </select>
+
+          <label for="combustivel">Combustível</label>
+          <select id="combustivel" name="combustivel" required>
+            <option value="">Selecione</option>
+            <option value="gasolina">Gasolina</option>
+            <option value="alcool">Álcool</option>
+            <option value="flex">Flex</option>
+            <option value="diesel">Diesel</option>
+            <option value="eletrico">Elétrico</option>
+            <option value="hibrido">Híbrido</option>
+          </select>
+
+          <label for="placa">Placa</label>
+          <input type="text" id="placa" name="placa" required>
+
+          <label for="cor">Cor</label>
+          <input type="text" id="cor" name="cor" required>
+
+          <label for="aceita_troca">Aceita Troca?</label>
+          <select id="aceita_troca" name="aceita_troca" required>
+            <option value="">Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+          </select>
+
+          <label for="garantia">Garantia (meses)</label>
+          <input type="number" id="garantia" name="garantia" min="0">
+
+          <button type="submit" class="btn btn-danger btn-lg">Enviar Anúncio</button>
+        </form>
+    </div>
+  
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
