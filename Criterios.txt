@@ -1,0 +1,49 @@
+# ARA0062 - Desenvolvimento Web
+
+## Projeto Final
+
+Este documento apresenta os critérios para análise do trabalho a ser desenvolvido no contexto da disciplina ARA0062 de Desenvolvimento Web.
+
+A seguir são apresentadas informações gerais sobre o trabalho:
+
+### Equipe
+
+- Conforme definido no início do semestre, os grupos deve ser de até 4 alunos.
+- O fato da equipe ser composta por menos alunos não diminui a exigência de entrega do projeto.
+- Eventualmente poderá ser aceito mais integrantes da equipe. Porém neste caso, a ponderação da nota levará em consideração o número maior de pessoas e espera-se que estes projetos tenham um resultado acima da média dos demais projetos.
+
+### Entrega
+
+- A entrega deverá ser feita na data definida pelo professor via SAVA, contendo os links dos repositórios (arquivo TXT). Incluir no comentário os integrantes da equipe. Somente um membro da equipe deve fazer a entrega no SAVA.
+- O código deve estar integralmente em repositórios GIT (preferencialmente GitHub) e acessível pelo professor e com separação entre código do Frontend e Backend (dois repositórios distintos ou pastas distintas no mesmo repositório).
+- O Frontend deve estar publicado e acessível pela Internet (preferencialmente usar o GitHub Pages)
+- Não é exigido que o Backend esteja publicado na Internet.
+
+### Apresentação
+
+- O trabalho deve ser apresentado em sala de aula na data definida pelo professor.
+- A apresentação será diretamente para o professor e não para a sala de aula.
+- A presença de todos integrantes na apresentação é obrigatória. A ausência de alunos resultará em nota 0, estando o aluno reprovado por nota.
+- Serão feitas as apresentações por ondem de quantidade de integrantes da equipe. Se algum membro da equipe não estiver presente no momento, a equipe poderá optar por apresentar sem o integrante que faltou ou aguardar. Neste último caso, a equipe ficará no último lugar da fila de apresentação.
+
+### Nota
+
+- A nota é definida pela analise de vários critérios. 
+- O cumprimento dos critérios mínimos define a nota mínima do trabalho, que é 60% da nota da apresentação.
+- Os demais 40% serão a partir de análise subjetiva do professor com base na análise de todos os projetos apresentados.
+- Cada critério mínimo tem até 5 pontos, sendo 0 como não atendeu até 5 que indica que atendeu totalmente. Os trabalhos que tiverem mais que 3 critérios com nota menor ou igual a 3, estarão limitados a nota mínima de aprovação, isto é, 60% da nota da apresentação.
+- A nota dos integrantes da equipe será individual de acordo com a apresentação e grau de atuação do integrante no desenvolvimento do projeto. O aluno que tiver ausência não justificada no dia da apresentação esterá reprovado. 
+
+### Crtérios Mínimos
+
+1. Todo código do projeto deve estar mantido no GitHub e deve existir um README.md do projeto com informações do projeto, tema, funcionalidades e membros da equipe.
+2. O Frontend e Backend devem estar separados, podendo estar em repositórios diferentes. Tanto Backend como Frontend devem ter um README.md explicando, passo a passo, como executar o projeto.
+3. As entregas iniciais do semestre (descrição do projeto e tema, design do projeto e Benchmark) devem estar no repositório e o arquivo README deve trazer essas informações.
+4. Ter ao menos 4 páginas HTML distintas linkadas entre si. Todas as páginas devem ser acessíveis a partir da página inicial. A navegação entre as páginas deve ser feita via Javascript para evitar recarregar a página inteira novamente. Sugere-se usar Framework JS. Todas as páginas devem ser validadas usando o sistema da w3.org: validator.w3.org
+5. A aplicação deve ter um formulário com ao menos 5 campos e usar recursos de validação do HTML5. O formulário deve estar em um modal ou página separada e deve ter campos para cadastro de dados pertinentes ao tema (receita para site de receitas, imóvel para site de imobiliária, etc).
+6. Todas as páginas devem ter uma mesma identidade visual conforme proposto na atividade 2 e garantir que o design apresentado na atividade 2 esteja coerente com o layout da página.
+7. O layout da página deve ser feito usando CSS arquivo externo. Preferencialmente usar recurso Tailwind ou Bootstrap. O layout deve ser web responsivo e mobile first.
+8. As requisições para o Backend devem ser feitas de forma assincrona via Javascript, sem bloquear a aplicação para o usuário.
+9. O Backend deve prover endpoints CRUD (Create-Retreave-Update-Delete) para ao menos uma informação pertinente ao tema (mero cadastro de usuário não se aplica). Sugere-se usar Framework Laravel PHP.
+10. Os dados devem ser armazenados de forma persistente em banco de dados. Aqui pode-se usar tanto PostgreSQL como também outro banco de dados como o SQLite.
+

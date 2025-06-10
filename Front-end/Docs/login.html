@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="assets/site-icon.svg">
+    <link rel="stylesheet" href="Styles/login-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+      <div class="logo-topo">  
+          <a href="main-page.html">
+            <img src="assets/logo.png" alt="Logo" width="200">
+          </a>
+      </div>
+      <div class="formulariologin">
+          <form id="loginform">
+              <h1 class="l1">Faça o seu Login</h1>
+              <input type="email" id="usuario" name="usuario" placeholder="Usuario">
+              <input type="password" id="senha" name="senha" placeholder="Senha">
+              <button type="submit">entrar</button>
+              <button class="criar-conta" type="button" onclick="window.location.href='cadastro.html'">Criar conta</button>
+              <button class="recuperar-senha" type="button" onclick="window.location.href='recuperar-pass.html'">Recuperar Senha</button>
+          </form>
+      </div>
+    </div>
+    <script>
+      document.getElementById("loginform").addEventListener("submit", function (event) {
+        event.preventDefault(); // evita o reload da página
+
+
+        const email = document.getElementById("usuario").value.trim();
+        const senha = document.getElementById("senha").value.trim();
+
+        if (!email || !senha) {
+          alert("Por favor, preencha todos os campos.");
+          return;
+          }
+
+          fetch("login.php", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+        },
+
+        body: `usuario=${encodeURIComponent(email)}&senha=${encodeURIComponent(senha)}`,
+        })
+        .then((response) => response.text())
+        .then((data) => {
+          if (data.includes("sucesso")) {
+            alert("Login realizado com sucesso!");
+            window.location.href = "main-page.html";
+          } else {
+            alert("Erro no login: " + data);
+          }
+        })
+        .catch((error) => {
+          console.error("Erro:", error);
+          alert("Erro de conexão com o servidor.");
+        });
+    });
+  </script>
+  </body>
+</html>
