@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("ano").textContent = carroSelecionado.ano;
   document.getElementById("cidade").textContent = carroSelecionado.cidade;
 
-  // tabela de informações
+  // tabela
   document.getElementById("anoTabela").textContent = carroSelecionado.ano;
   document.getElementById("km").textContent = carroSelecionado.km;
   document.getElementById("cambio").textContent = carroSelecionado.cambio;
