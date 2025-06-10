@@ -84,7 +84,13 @@
           </select>
 
           <label for="carroceria">Carroceria</label>
-          <input type="text" id="carroceria" name="carroceria">
+          <select id="carroceria" name="carroceria" required>
+            <option value="">Selecione</option>
+            <option value="sim">Hatch</option>
+            <option value="nao">Sedan</option>
+            <option value="nao">SUV</option>
+            <option value="nao">Coupé</option>
+          </select>
 
           <label for="blindado">Blindado</label>
           <select id="blindado" name="blindado" required>
@@ -110,15 +116,27 @@
           <label for="cor">Cor</label>
           <input type="text" id="cor" name="cor" required>
 
-          <label for="aceita_troca">Aceita Troca?</label>
-          <select id="aceita_troca" name="aceita_troca" required>
+          <label for="troca">Aceita Troca?</label>
+          <select id="troca" name="troca" required>
             <option value="">Selecione</option>
             <option value="sim">Sim</option>
             <option value="nao">Não</option>
           </select>
 
-          <label for="garantia">Garantia (meses)</label>
-          <input type="number" id="garantia" name="garantia" min="0">
+          <label for="garantia">Garantia</label>
+          <select id="garantia" name="garantia" required>
+            <option value="">Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+          </select>
+
+          <label for="tipo-carro">Tipo de carro</label>
+          <select id="tipo-carro" name="tipo-carro" required>
+            <option value="">Selecione</option>
+            <option value="passeio">Carro de passeio</option>
+            <option value="premium">Carro Premium</option>
+            <option value="super">Supercarro</option>
+          </select>
 
           <button type="submit" class="btn btn-danger btn-lg">Enviar Anúncio</button>
         </form>

@@ -179,7 +179,7 @@ const carros = {
     cambio: "Automático",
     carroceria: "Sedan",
     blindado: "Sim",
-    combustivel: "Híbrido/Gasolina",
+    combustivel: "Híbrido",
     placa: "BMW6R89",
     cor: "Grafite",
     troca: "Não",
