@@ -50,7 +50,7 @@ if (!isset($_SESSION['usuario'])) {
             <a class="nav-link" href="supercarros.html">Super Carros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Anuncie Aqui</a>
+            <a class="nav-link" href="anuncie.html">Anuncie Aqui</a>
           </li>
         </ul>
       </div>
@@ -58,7 +58,7 @@ if (!isset($_SESSION['usuario'])) {
   </nav>
     <main class="flex">
         <div class="flex main-ad">
-            <img class="main-car" src="assets/camaro transparent.avif" alt="">
+            <img class="main-car" src="assets/carros/camaro transparent.avif" alt="">
             <a class="botao" href="carro.html">ADQUIRIR</a>
             <div class="flex highlights-space">
                 <div class="flex highlights">
