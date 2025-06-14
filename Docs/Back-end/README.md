@@ -26,3 +26,4 @@ Laravel - utilizamos o Laravel, para implementar uma automação via Artisan, Es
 O banco de dados escolhido foi o SQLite pela simplicidade e facilidade de configuração local.
 Composer - utilizamos o Composer para garantir que todas as dependências estivessem na versao correta e que consigam se comunicar, para não gastar tempo gerenciando bibliotecas manualmente.
 Artisan - utilizamos a ferramenta de linha de comando (CLI) do framework Laravel, o Artisan para criar Models, Controllers e View (MCV) para automatizar e simplificar muitas das tarefas. 
+AJAX - utilizamos AJAX, pois é uma técnica para fazer chamadas assíncronas com JavaScript, usando APIs como XMLHttpRequest / fetch().
