@@ -10,7 +10,7 @@ Nesta pagina web temos:
 - Cadastro e login de usuários
 - Cadastro de veículos com nome do carro,ano, valor
 - Lista de veículos cadastrados
-- Exclusão e edição de veículos para alteração de dados
+- Exclusão e edição de veículos para alteração de dados (CRUD)
 - Separação entre veículos populares, premium e supercarros
 - Interface com identidade visual semelhante
 - Requisições assíncronas usando JavaScript
