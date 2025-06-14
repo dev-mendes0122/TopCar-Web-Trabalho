@@ -21,9 +21,9 @@ Create, Read, Update, Delete esta implementado em PHP e esta separado cada pasta
 
 Estrutura do Back-end do Projeto:
 
-PHP - utilizamos o PHP no Back-end por ser uma linguagem focada em web fácil de aprender e com frameworks robustos como Laravel e eficaz para integrar banco de dados como o SQlite.
-Laravel - utilizamos o Laravel, para implementar uma automação via Artisan, Estrutura MVC, (Model, View, Controller), ferramentas para autenticação, implementação mais facil do banco de dados que interage com o PHP 
-O banco de dados escolhido foi o SQLite pela simplicidade e facilidade de configuração local.
-Composer - utilizamos o Composer para garantir que todas as dependências estivessem na versao correta e que consigam se comunicar, para não gastar tempo gerenciando bibliotecas manualmente.
-Artisan - utilizamos a ferramenta de linha de comando (CLI) do framework Laravel, o Artisan para criar Models, Controllers e View (MCV) para automatizar e simplificar muitas das tarefas. 
-AJAX - utilizamos AJAX, pois é uma técnica para fazer chamadas assíncronas com JavaScript, usando APIs como XMLHttpRequest / fetch().
+- PHP - utilizamos o PHP no Back-end por ser uma linguagem focada em web fácil de aprender e com frameworks robustos como Laravel e eficaz para integrar banco de dados como o SQlite.
+- Laravel - utilizamos o Laravel, para implementar uma automação via Artisan, Estrutura MVC, (Model, View, Controller), ferramentas para autenticação, implementação mais facil do banco de dados que interage com o PHP 
+- O banco de dados escolhido foi o SQLite pela simplicidade e facilidade de configuração local.
+- Composer - utilizamos o Composer para garantir que todas as dependências estivessem na versao correta e que consigam se comunicar, para não gastar tempo gerenciando bibliotecas manualmente.
+- Artisan - utilizamos a ferramenta de linha de comando (CLI) do framework Laravel, o Artisan para criar Models, Controllers e View (MCV) para automatizar e simplificar muitas das tarefas. 
+- AJAX - utilizamos AJAX, pois é uma técnica para fazer chamadas assíncronas com JavaScript, usando APIs como XMLHttpRequest / fetch().
