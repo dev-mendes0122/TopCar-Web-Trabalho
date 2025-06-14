@@ -7,7 +7,7 @@ As Tecnologias Utilizadas foram:
 - PHP
 - Laravel 
 - Banco de dados SQLite
-Composer
+- Composer
 
 As Funcões do Backend são:
 
