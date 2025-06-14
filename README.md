@@ -5,6 +5,7 @@ O sistema permitira aos usuarios criar contas, cadastrar, anunciar, e consultar 
 Haverá 3 tipos de carros em que dividiremos em carros populares, carros premium e Super carros e que permitira buscas filtradas.
 Há no github um documento para o benchmark e outro documento para o design do figma.
 
+Tema:
 Nesta pagina web temos:
 - Cadastro e login de usuários
 - Cadastro de veículos com nome do carro,ano, valor
