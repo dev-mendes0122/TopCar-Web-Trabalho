@@ -42,9 +42,9 @@ Estrutura de Páginas
 
 O frontend é composto pelas seguintes páginas: 
 
-main-page.html - Página inicial com anúncio principal e navegação 
+*main-page.html - Página inicial com anúncio principal e navegação 
 
-carrospasseio.html - Lista de carros populares 
+*carrospasseio.html - Lista de carros populares 
 
 carrospremium.html - Lista de carros premium 
 
