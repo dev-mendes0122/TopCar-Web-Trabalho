@@ -39,15 +39,25 @@ TopCar Motors – Figma
 https://www.figma.com/design/o3mg7tkztyp2jrTx99Z3fk/TopCar-Motors?node-id=0-1&p=f
 
 Estrutura de Páginas 
+
 O frontend é composto pelas seguintes páginas: 
+
 main-page.html - Página inicial com anúncio principal e navegação 
+
 carrospasseio.html - Lista de carros populares 
+
 carrospremium.html - Lista de carros premium 
+
 supercarros.html - Lista de supercarros 
+
 anuncie.html - Página com formulário para anúncio de veículos 
+
 cadastro.html - Página para cadatros de novos usuários
+
 login.html - Página de Login
+
 recuperar-pass.html - Página para recuperar senhas
+
 
 Todas as páginas compartilham a mesma identidade visual e podem ser acessadas pela barra de navegação principal, sem recarregar toda a aplicação. 
 
