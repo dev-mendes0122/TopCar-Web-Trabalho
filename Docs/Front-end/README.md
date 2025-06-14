@@ -23,6 +23,7 @@ Benchmark
 
 Acesse os sites analisados:
 Webmotors: webmotors.com.br 
+
 OLX: olx.com.br 
 
 Protótipo no Figma:
