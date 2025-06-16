@@ -1,33 +1,11 @@
-* {
-    font-family: "Roboto", sans-serif;
-}
 
 body{
     background-color: lightgray;
 }
 
-.flex {
-    display: flex;
-}
-
-header {
-    justify-content: flex-end;
-    background-color: #575757;
-}
 
 main {
     height: 60rem;
-}
-
-.nav-links-right {
-    align-items: center;
-    width: 5rem;
-    justify-content: space-around;
-}
-
-.nav-links-right img {
-    height: 1.5rem;
-    cursor: pointer;
 }
 
 .cartao {
@@ -94,22 +72,6 @@ main {
 
 .btn-compre {
     background-color: red;
-}
-
-.logo {
-    height: 32vw;
-    width: auto;
-}
-
-.nav_bar {
-    align-items: center;
-    justify-content: center;
-}
-
-.navbar-brand {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .text-center {

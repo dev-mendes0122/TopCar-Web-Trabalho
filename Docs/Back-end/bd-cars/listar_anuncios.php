@@ -48,6 +48,7 @@ try {
     foreach ($result as $row) {
         echo "<tr>
             <td>{$row['id']}</td>
+            <td>{$row['modelo']}</td>
             <td>{$row['descricao']}</td>
             <td>R$ {$row['valor']}</td>
             <td>{$row['ano']}</td>

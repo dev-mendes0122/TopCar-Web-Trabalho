@@ -1,11 +1,10 @@
 <?php
 try {
-    $pdo = new PDO('sqlite:banco_anuncio.db');
-
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $db = new PDO('sqlite:banco_anuncio.db');
 
     $sql = "CREATE TABLE IF NOT EXISTS anuncios (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
+        modelo TEXT,
         descricao TEXT,
         valor REAL,
         ano INTEGER,
@@ -18,11 +17,11 @@ try {
         placa TEXT,
         cor TEXT,
         tipo_carro TEXT,
-        foto TEXT -- nova coluna adicionada
+        foto TEXT
     )";
 
-    $pdo->exec($sql);
-    echo "Banco e tabela criados com sucesso.";
+    $db->exec($sql);
+    echo "Banco e tabela criados com sucesso!";
 } catch (PDOException $e) {
     echo "Erro: " . $e->getMessage();
 }
