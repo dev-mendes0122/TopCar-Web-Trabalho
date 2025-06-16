@@ -11,10 +11,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if (move_uploaded_file($caminhoTemp, $destino)) {
             // Preparar dados
             $stmt = $db->prepare("INSERT INTO anuncios 
-            (descricao, valor, ano, cidade, quilometragem, cambio, carroceria, blindado, combustivel, placa, cor, tipo_carro, foto) 
+            (modelo, descricao, valor, ano, cidade, quilometragem, cambio, carroceria, blindado, combustivel, placa, cor, tipo_carro, foto) 
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
             $stmt->execute([
+                $_POST['modelo']
                 $_POST['descricao'],
                 $_POST['valor'],
                 $_POST['ano'],

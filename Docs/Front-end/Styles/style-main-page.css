@@ -3,12 +3,7 @@ body {
     align-items: center;
 }
 
-.logo {
-    height: 32vw;
-}
-
 main {
-    justify-content: center;
     padding-top: 2rem;
 }
 

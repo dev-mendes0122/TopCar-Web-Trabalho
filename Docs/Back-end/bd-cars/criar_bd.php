@@ -3,6 +3,7 @@ try {
     $db = new PDO('sqlite:banco_anuncios.db'); // cria na mesma pasta
     $db->exec("CREATE TABLE IF NOT EXISTS anuncios (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
+        modelo TEXT NOT NULL,
         descricao TEXT NOT NULL,
         valor REAL NOT NULL,
         ano INTEGER NOT NULL,

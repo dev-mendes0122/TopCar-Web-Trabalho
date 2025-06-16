@@ -14,10 +14,6 @@
         height: auto;
     }
 
-    
-    .logo {
-        height: 10vw;
-    }
 
     header {
         width: 100%;
@@ -25,7 +21,6 @@
     
     main {
         align-items: flex-start;
-        justify-content: center;
     }
     
     .main-content {
