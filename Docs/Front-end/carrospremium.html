@@ -52,86 +52,24 @@
       </div>
     </div>
   </nav>
-  <main>
-    <div class="text-center">
-      <h1>Conheça nossa frota de carros</h1>
-      <h5 class="card-title">Carros Premium</h5>
-      <p class="card-text">Aqui você terá as melhores marcas e o melhor atendimento.</p>
-    </div>
-
-    <div class="container mt-4">
-      <div class="container-cars justify-content-center g-4">
-
-        <div class="cartao box-shadow-misc">
-          <img src="assets/carros/2024-Honda-Civic-Type-R-review-1.webp" alt="cartaodollar.png">
-          <div class="cartao-textos line-height-min">
-            <p>HONDA CIVIC</p>
-            <p>2.0 DI e:HEV TOURING e-CVT</p>
-            <p>AUTOMÁTICO</p>
-          </div>
-          <div class="cartao-textos line-height-mod">
-            <section class="misc-info">
-              <img src="Assets/ano.png" id="info-icon" alt="">
-              <p>2024/2025</p>
-            </section>
-            <section class="misc-info">
-              <img src="Assets/local.png" id="info-icon" alt="">
-              <p>Campinas-SP</p>
-            </section>
-            <p id="valor">R$ 265.900,00</p>
-            <div class="area-botao">
-              <a href="carro.html?carro=civic" class="btn btn-danger btn-lg">Compre agora</a>
+   <script>
+    fetch('../back-end/bd-cars/listar_carros.php?tipo_carro=premium')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('carros-container');
+        data.forEach(carro => {
+          const card = `
+            <div style="border:1px solid #ccc; margin:10px; padding:10px;">
+              <h3>${carro.modelo}</h3>
+              <p>${carro.descricao}</p>
+              <p>R$ ${carro.valor}</p>
+              <img src="../back-end/bd-cars/imagens/${carro.foto}" width="200">
             </div>
-          </div>
-        </div>
-        <div class="cartao box-shadow-misc">
-          <img src="assets/carros/2020-audi-a3-sportback.webp" alt="cartaodollar.png">
-          <div class="cartao-textos line-height-min">
-            <p>AUDI A3</p>
-            <p>2.0 40 TFSI MHEV S-TRONIC</p>
-            <p>AUTOMÁTICO</p>
-          </div>
-          <div class="cartao-textos line-height-mod">
-            <section class="misc-info">
-              <img src="Assets/ano.png" id="info-icon" alt="">
-              <p>2024/2025</p>
-            </section>
-            <section class="misc-info">
-              <img src="Assets/local.png" id="info-icon" alt="">
-              <p>Campinas-SP</p>
-            </section>
-            <p id="valor">R$ 272.290,00</p>
-            <div class="area-botao">
-              <a href="carro.html?carro=a3" class="btn btn-danger btn-lg">Compre agora</a>
-            </div>
-          </div>
-        </div>
-        <div class="cartao box-shadow-misc">
-          <img src="assets/carros/Novo-BMW-320i-M-Sport-1.webp" alt="cartaodollar.png">
-          <div class="cartao-textos line-height-min">
-            <p>BMW 320i</p>
-            <p>2.0 16V TURBO SPORT</p>
-            <p>AUTOMÁTICO</p>
-          </div>
-          <div class="cartao-textos line-height-mod">
-            <section class="misc-info">
-              <img src="Assets/ano.png" id="info-icon" alt="">
-              <p>2024/2025</p>
-            </section>
-            <section class="misc-info">
-              <img src="Assets/local.png" id="info-icon" alt="">
-              <p>Campinas-SP</p>
-            </section>
-            <p id="valor">R$ 239.900,00</p>
-            <div class="area-botao">
-              <a href="carro.html?carro=bmw320i" class="btn btn-danger btn-lg">Compre agora</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
+          `;
+          container.innerHTML += card;
+        });
+      });
+  </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -30,7 +30,7 @@ try {
         $_POST['combustivel'],
         $_POST['placa'],
         $_POST['cor'],
-        $_POST['tipo-carro'],
+        $_POST['tipo_carro'],
         $foto_nome
     ]);
 
