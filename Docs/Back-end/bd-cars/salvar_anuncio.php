@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     try {
-        $db = new PDO('sqlite:banco_anuncios.db');
+        $db = new PDO('sqlite:banco_anuncio.db');
 
         // Processar imagem
         $nomeArquivo = $_FILES['foto']['name'];

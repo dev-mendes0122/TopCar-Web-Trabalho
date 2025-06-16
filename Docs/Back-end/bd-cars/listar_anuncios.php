@@ -1,6 +1,6 @@
 <?php
 try {
-    $db = new PDO('sqlite:banco_anuncios.db');
+    $db = new PDO('sqlite:banco_anuncio.db');
     $result = $db->query("SELECT * FROM anuncios");
 
     echo "<!DOCTYPE html>
