@@ -3,7 +3,7 @@ try {
     $db = new PDO('sqlite:banco_anuncio.db');
 
     // Diretório para salvar fotos
-    $dir = "Docs/Back-end/bd-cars/uploads/";
+    $dir = "imagens/";
     if (!is_dir($dir)) {
         mkdir($dir, 0777, true);
     }
@@ -39,3 +39,4 @@ try {
     echo "Erro: " . $e->getMessage();
 }
 ?>
+
