@@ -1,0 +1,26 @@
+// TOPCAR-WEB-TRABALHO/.devcontainer/devcontainer.json
+{
+  "name": "TopCar Web - Laravel Backend Environment",
+  "image": "mcr.microsoft.com/devcontainers/php:1-8.2",
+  "forwardPorts": [8000, 3306],
+  // Ajuste o caminho aqui para apontar para a pasta do seu projeto Laravel
+  "postCreateCommand": "mkdir -p Docs/Back-end/laravel && cd Docs/Back-end/laravel && composer create-project laravel/laravel .",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.php-debug",
+        "felixfbecker.php-intellisense",
+        "humao.rest-client"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/mysql:1": {
+      "version": "8.0",
+      "username": "root",
+      "password": "password",
+      "database": "topcar_db"
+    }
+  },
+  "remoteUser": "root"
+}
