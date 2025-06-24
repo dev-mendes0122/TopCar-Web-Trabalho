@@ -1,9 +1,13 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 body {
     margin: 0;
-    height: 100vh; 
+    height: 100vh; /* ocupa 100% da altura da tela */
     display: flex;
-    justify-content: center; 
-    align-items: center;     
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;     /* centraliza verticalmente */
     background-color: #ab9a9a;
   }
 
